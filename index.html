@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Best Movie Play Website with Bollywood, Hollywood, Tollywood, Cartoon Movies here with Upcoming Movies Features. Free to Play & Download">
+    <meta name="keywords" content="Movie Play, Bollywood, Hollywood, Tollywood, Kids Movies, Movies, Cartoon Movies">
+    <meta name="author" content="Pirace & Kinza Bronson">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./Logo/Theatre Logo.png" type="image/x-icon">
+   <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
+    <style>
+      /* Top Header Border */
+  .pk{
+        border-style: solid;
+        border-color:wheat;
+        border-width: 2px;
+        background-color:wheat;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 30px;
+        padding-left:0px;
+  }
+
+  .hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+     
+      /* Card Heading */
+  .card h1{
+        text-align: center;
+  }
+
+  .card2 h1{
+        text-align: center;
+  }
+
+  .card img{
+    transition: all 0.3s;
+    overflow: hidden;
+  }
+
+  .card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0.2);
+    overflow: hidden;
+  }
+
+  .card img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+
+      /* Footer */
+  .footer{
+         background: #171717;
+         color:white;}
+  
+  .links ul{
+     list-style-type: none;
+  }
+
+  .links li a{
+      color: white;
+      transition: color .2s;
+      text-decoration:none;
+    }
+
+  .links li a:hover{
+        color:#ffffff;
+        } 
+
+  .about-company i{
+    font-size: 25px;
+  }
+  
+  a{
+      color:white;
+      transition: color .2s;  
+    }
+
+  a :hover{
+      color:grey}
+
+     
+  .location i{
+    font-size: 18px;}
+
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);}
+      
+  .navbar-brand p{
+    float: right;
+    margin-top: 18px;
+    margin-left: 10px;
+  }
+
+  .navbar-brand img{
+    margin-top: 8px;
+  }
+
+  .content{
+    text-align: center;
+  }
+  .content h1{
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+  }
+
+  .back-video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  @media(min-aspect-ratio:16/9){
+    .back-video{
+      width: auto;
+      height: 100%;
+    }
+  }
+
+@supports (transform-style:preserve-3d) {
+	.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0)
+	}
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+ 
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+.kinzap{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="pk">
+       B.H.T
+    </div>
+ 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./Logo/Theatre Logo.png" width="50px" height="50px" class=" imge img-fuild" alt=""> <p>MOVIE PLAY</p></a>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Movies
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Bollywood.html">Bollywood  </a></li>
+                  <li><a class="dropdown-item" href="Hollywood.html">Hollywood</a></li>
+                  <li><a class="dropdown-item" href="Tolly.html">Tollywood</a></li>
+                  <li><a class="dropdown-item" href="Kid.html">Kids Movie</a></li>
+                </ul>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="Upcoming.html">Upcoming Movies</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="">
+        <div class="row">
+          <div class="col">
+      <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="./FAST X - Official Teaser Trailer (2023) Vin Diesel, Jason Momoa, Brie Larson, Tyrese Gibson.mp4" type="video/mp4">
+        </video>
+
+      <div class="content">
+        <h1 class="kinzap"></h1>
+        <a href="https://www.youtube.com/watch?v=U2YtsxNw7Po">Play Now</a>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+      <!--slide end--> 
+
+      <!-- card section -->
+      <div class="card">
+        <div class="container-fluid">
+          <h1>SUPER-HIT MOVIES</h1>
+        <div class="row g-0">
+          <div class="col-md-3">
+            <div class="card mb-3 mt-5" style="width: 18rem;">
+              <img src="./bollywoord/Image 1.jpg" class="card-img-top" alt="..." height="400px">
+              <div class="card-body">
+                <h5 class="card-title">PATHAAN</h5>
+                <a href="https://hdmovie2.vin/movies/pathaan-2023-hindi-hd/" class="btn btn-primary">PLAY NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-3 mt-5" style="width: 18rem;">
+              <img src="./bollywoord/Image 2.jpg" class="card-img-top" alt="..." height="400px">
+              <div class="card-body">
+                <h5 class="card-title">KGF CHAPTER-2</h5>
+                <a href="https://hdmovie2.vin/movies/k-g-f-chapter-2-2022-hindi/" class="btn btn-primary">PLAY NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-3 mt-5" style="width: 18rem;">
+              <img src="./bollywoord/Image 3 card.jpg" class="card-img-top" alt="..." height="400px">
+              <div class="card-body">
+                <h5 class="card-title">RRR</h5>
+                <a href="https://hdmovie2.vin/movies/rrr-2022-hindi-dubbed-hd/" class="btn btn-primary">PLAY NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-3 mt-5" style="width: 18rem;">
+              <img src="./bollywoord/Image 4.jpg" class="card-img-top" alt="..." height="400px">
+              <div class="card-body">
+                <h5 class="card-title">PUSHPA-THE RISE PART 1</h5>
+                <a href="https://hdmovie2.vin/movies/pushpa-the-rise-part-1-2021-hindi-dubbed/" class="btn btn-primary">PLAY NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card 2">
+      <div class="container-fluid">
+        <h1>UPCOMING MOVIES</h1>
+      <div class="row g-0">
+        <div class="col-md-3">
+          <div class="card mb-3 mt-5" style="width: 18rem;">
+            <img src="./upoming/dunki.jpg" class="card-img-top" alt="..." height="400px">
+            <div class="card-body">
+              <h5 class="card-title">DUNKI</h5>
+              <a href="#" onclick="abc()" class="btn btn-primary">COMING SOON</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3 mt-5" style="width: 18rem;">
+            <img src="./upoming/pic 2.jpg" class="card-img-top" alt="..." height="400px">
+            <div class="card-body">
+              <h5 class="card-title">KISI KA BHAI KISI KI JAAN</h5>
+              <a href="#" onclick="pi()" class="btn btn-primary">COMING SOON</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3 mt-5" style="width: 18rem;">
+            <img src="./upoming/Fast X 2.jpg" class="card-img-top" alt="..." height="400px">
+            <div class="card-body">
+              <h5 class="card-title">FAST-X</h5>
+              <a href="#" onclick="ki()" class="btn btn-primary">COMING SOON</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3 mt-5" style="width: 18rem;">
+            <img src="./upoming/Pic 12.jpg" class="card-img-top" alt="..." height="400px">
+            <div class="card-body">
+              <h5 class="card-title">THE SUPER MARIO BROS</h5>
+              <a href="#" onclick="pki()" class="btn btn-primary">COMING SOON</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-------Footer-->
+<div class="mt-5 pt-5 pb-5 footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xs-12 about-company">
+        <h2>MOVIE PLAY</h2>
+        <p>A feel-good film is a film which presents people and life in a way which makes the people who watch it feel happy and optimistic.</p>
+      </div>
+      <div class="col-lg-3 col-xs-12 links">
+        <h4 class="mt-lg-0 mt-sm-3">Movies</h4>
+          <ul class="m-0 p-0">
+            <li>- <a href="Bollywood.html">Bollywood</a></li>
+            <li>- <a href="Hollywood.html">Hollywood</a></li>
+            <li>- <a href="Tolly.html">Tollywood</a></li>
+            <li>- <a href="Kid.html">Kids Movies</a></li>
+          </ul>
+      </div>
+      <div class="col-lg-4 col-xs-12 location">
+        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+        <p>St Mark Church, Sherabad Korangi 5, Karachi, Pakistan</p>
+        <p class="mb-0">(541) 754-3010</p>
+        <p>piracekinz1@gmail.com</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col copyright">
+        <p class=""><small class="text-white-50">© 2023. All Rights Reserved. Developed By Pirace & Kinza Bronson</small></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    $('#myCarousel').carousel({
+   interval: 3000,
+})
+
+var typed = new Typed('.kinzap',{
+  strings:["MOVIE PLAY"],
+  typeSpeed:100,
+  backSpeed:100,
+  loop:true
+});
+
+function abc(){
+  alert("This Movie Is Coming Soon");
+}
+
+function pi(){
+  alert("This Movie Is Coming Soon");
+}
+
+function ki(){
+  alert("This Movie Is Coming Soon");
+}
+
+function pki(){
+  alert("This Movie Is Coming Soon");
+}
+ </script>
+</body>
+</html>
